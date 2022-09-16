@@ -16,7 +16,10 @@ public class FreshKicks extends CustomRelic {
     super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
   }
 
-  // TODO: Actually implement the swimming effect!
+  // NOTE: The effect is applied in `SwimmingPower`, because relics don't seem
+  // to have a good way to listen for power changes. We could implement this as
+  // a stance, but that's not especially built into basemod either, we'd need
+  // to look deeper at how Downfall does it!
 
   @Override
   public String getUpdatedDescription() {

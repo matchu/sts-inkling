@@ -1,4 +1,10 @@
 {
+  "inklingMod:SwimmingPower": {
+    "NAME": "Swimming",
+    "DESCRIPTIONS": [
+      "Can't attack, gain #b1 [E] after playing a card. Lasts until your next turn."
+    ]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
