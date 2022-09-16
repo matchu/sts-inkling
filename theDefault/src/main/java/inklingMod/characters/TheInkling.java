@@ -4,6 +4,7 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import inklingMod.InklingMod;
 import inklingMod.cards.Defend;
+import inklingMod.cards.Dive;
 import inklingMod.cards.Strike;
 import inklingMod.relics.DefaultClickableRelic;
 import inklingMod.relics.PlaceholderRelic;
@@ -161,7 +162,6 @@ public class TheInkling extends CustomPlayer {
         startingDeck.add(Strike.ID);
         startingDeck.add(Strike.ID);
         startingDeck.add(Strike.ID);
-        startingDeck.add(Strike.ID);
         startingDeck.add(Defend.ID);
         startingDeck.add(Defend.ID);
         startingDeck.add(Defend.ID);
@@ -169,6 +169,7 @@ public class TheInkling extends CustomPlayer {
         startingDeck.add(Defend.ID);
         startingDeck.add(Defend.ID);
         startingDeck.add(Defend.ID);
+        startingDeck.add(Dive.ID);
         return startingDeck;
     }
 
