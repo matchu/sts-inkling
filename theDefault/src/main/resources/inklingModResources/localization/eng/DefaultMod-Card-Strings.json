@@ -9,7 +9,8 @@
   },
   "inklingMod:Dive": {
     "NAME": "Dive!",
-    "DESCRIPTION": "Swim until the start of your next turn. Draw !M! cards."
+    "DESCRIPTION": "Swim until the start of your next turn. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Swim until the start of your next turn. NL Draw !M! cards."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",

@@ -31,7 +31,7 @@ public class Dive extends CustomCard {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 
     this.baseMagicNumber = NUM_CARDS;
-    this.magicNumber = NUM_CARDS;
+    this.magicNumber = this.baseMagicNumber;
   }
 
   @Override
@@ -46,6 +46,12 @@ public class Dive extends CustomCard {
     if (!upgraded) {
       upgradeName();
       upgradeMagicNumber(UPGRADE_NUM_ADDITIONAL_CARDS);
+      // NOTE: To change "1 card" to "2 cards", we need to switch to an all
+      // new string. If it was always >1, we could just do "!M! cards".
+      // (See Coolheaded from the base game, we copied from their
+      // implementation.)
+      this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+      initializeDescription();
     }
   }
 }
