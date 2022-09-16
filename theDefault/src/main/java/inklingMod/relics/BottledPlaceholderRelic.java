@@ -4,7 +4,7 @@ import basemod.BaseMod;
 import basemod.abstracts.CustomBottleRelic;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
-import inklingMod.DefaultMod;
+import inklingMod.InklingMod;
 import inklingMod.patches.relics.BottledPlaceholderField;
 import inklingMod.util.TextureLoader;
 
@@ -20,8 +20,8 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import static inklingMod.DefaultMod.makeRelicOutlinePath;
-import static inklingMod.DefaultMod.makeRelicPath;
+import static inklingMod.InklingMod.makeRelicOutlinePath;
+import static inklingMod.InklingMod.makeRelicPath;
 
 import java.util.Iterator;
 import java.util.function.Predicate;
@@ -47,7 +47,7 @@ public class BottledPlaceholderRelic extends CustomRelic implements CustomBottle
     // (It's set to false on Equip)
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("BottledPlaceholderRelic");
+    public static final String ID = InklingMod.makeID("BottledPlaceholderRelic");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("BottledPlaceholder.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("BottledPlaceholder.png"));
 

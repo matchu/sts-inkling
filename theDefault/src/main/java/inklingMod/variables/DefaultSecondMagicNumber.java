@@ -3,7 +3,7 @@ package inklingMod.variables;
 import basemod.abstracts.DynamicVariable;
 import inklingMod.cards.AbstractDefaultCard;
 
-import static inklingMod.DefaultMod.makeID;
+import static inklingMod.InklingMod.makeID;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 

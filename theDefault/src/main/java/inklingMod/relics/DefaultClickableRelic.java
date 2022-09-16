@@ -1,11 +1,11 @@
 package inklingMod.relics;
 
 import basemod.abstracts.CustomRelic;
-import inklingMod.DefaultMod;
+import inklingMod.InklingMod;
 import inklingMod.util.TextureLoader;
 
-import static inklingMod.DefaultMod.makeRelicOutlinePath;
-import static inklingMod.DefaultMod.makeRelicPath;
+import static inklingMod.InklingMod.makeRelicOutlinePath;
+import static inklingMod.InklingMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
@@ -28,7 +28,7 @@ public class DefaultClickableRelic extends CustomRelic implements ClickableRelic
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("DefaultClickableRelic");
+    public static final String ID = InklingMod.makeID("DefaultClickableRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
     private static final Texture OUTLINE = TextureLoader

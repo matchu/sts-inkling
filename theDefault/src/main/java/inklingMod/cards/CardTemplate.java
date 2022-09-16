@@ -1,10 +1,10 @@
 package inklingMod.cards;
 
 import basemod.AutoAdd;
-import inklingMod.DefaultMod;
-import inklingMod.characters.TheDefault;
+import inklingMod.InklingMod;
+import inklingMod.characters.TheInkling;
 
-import static inklingMod.DefaultMod.makeCardPath;
+import static inklingMod.InklingMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -49,7 +49,7 @@ public class CardTemplate extends AbstractDynamicCard {
     // public static final String ID =
     // DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE
     // TEMPLATE;
-    public static final String ID = DefaultMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    public static final String ID = InklingMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
                                                                 // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
@@ -62,7 +62,7 @@ public class CardTemplate extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY; // since they don't change much.
     private static final CardType TYPE = CardType.ATTACK; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
     private static final int COST = 1; // COST = ${COST}
     private static final int UPGRADED_COST = 0; // UPGRADED_COST = ${UPGRADED_COST}

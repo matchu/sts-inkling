@@ -2,7 +2,7 @@ package inklingMod.variables;
 
 import basemod.abstracts.DynamicVariable;
 
-import static inklingMod.DefaultMod.makeID;
+import static inklingMod.InklingMod.makeID;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;

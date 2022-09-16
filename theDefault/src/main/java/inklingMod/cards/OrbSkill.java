@@ -1,11 +1,11 @@
 package inklingMod.cards;
 
 import basemod.abstracts.CustomCard;
-import inklingMod.DefaultMod;
-import inklingMod.characters.TheDefault;
+import inklingMod.InklingMod;
+import inklingMod.characters.TheInkling;
 import inklingMod.orbs.DefaultOrb;
 
-import static inklingMod.DefaultMod.makeCardPath;
+import static inklingMod.InklingMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -24,7 +24,7 @@ public class OrbSkill extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(OrbSkill.class.getSimpleName());
+    public static final String ID = InklingMod.makeID(OrbSkill.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -39,7 +39,7 @@ public class OrbSkill extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
 

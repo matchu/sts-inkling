@@ -1,11 +1,11 @@
 package inklingMod.relics;
 
 import basemod.abstracts.CustomRelic;
-import inklingMod.DefaultMod;
+import inklingMod.InklingMod;
 import inklingMod.util.TextureLoader;
 
-import static inklingMod.DefaultMod.makeRelicOutlinePath;
-import static inklingMod.DefaultMod.makeRelicPath;
+import static inklingMod.InklingMod.makeRelicOutlinePath;
+import static inklingMod.InklingMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,7 +19,7 @@ public class PlaceholderRelic extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic");
+    public static final String ID = InklingMod.makeID("PlaceholderRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

@@ -1,11 +1,11 @@
 package inklingMod.cards;
 
 import basemod.abstracts.CustomCard;
-import inklingMod.DefaultMod;
+import inklingMod.InklingMod;
 import inklingMod.actions.UncommonPowerAction;
-import inklingMod.characters.TheDefault;
+import inklingMod.characters.TheInkling;
 
-import static inklingMod.DefaultMod.makeCardPath;
+import static inklingMod.InklingMod.makeCardPath;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,7 +24,7 @@ public class DefaultUncommonPower extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultUncommonPower.class.getSimpleName());
+    public static final String ID = InklingMod.makeID(DefaultUncommonPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -37,7 +37,7 @@ public class DefaultUncommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
     private static final int COST = -1;
     private static final int MAGIC = 1;

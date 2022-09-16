@@ -1,10 +1,10 @@
 package inklingMod.cards;
 
 import basemod.abstracts.CustomCard;
-import inklingMod.DefaultMod;
-import inklingMod.characters.TheDefault;
+import inklingMod.InklingMod;
+import inklingMod.characters.TheInkling;
 
-import static inklingMod.DefaultMod.makeCardPath;
+import static inklingMod.InklingMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -25,7 +25,7 @@ public class DefaultUncommonAttack extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultUncommonAttack.class.getSimpleName());
+    public static final String ID = InklingMod.makeID(DefaultUncommonAttack.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     // /TEXT DECLARATION/
@@ -35,7 +35,7 @@ public class DefaultUncommonAttack extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
     private static final int DAMAGE = 10;

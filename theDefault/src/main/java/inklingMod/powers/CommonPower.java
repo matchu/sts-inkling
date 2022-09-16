@@ -1,10 +1,10 @@
 package inklingMod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
-import inklingMod.DefaultMod;
+import inklingMod.InklingMod;
 import inklingMod.util.TextureLoader;
 
-import static inklingMod.DefaultMod.makePowerPath;
+import static inklingMod.InklingMod.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 public class CommonPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("CommonPower");
+    public static final String POWER_ID = InklingMod.makeID("CommonPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
