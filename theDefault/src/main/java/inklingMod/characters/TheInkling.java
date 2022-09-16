@@ -3,18 +3,8 @@ package inklingMod.characters;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import inklingMod.InklingMod;
-import inklingMod.cards.samples.DefaultAttackWithVariable;
-import inklingMod.cards.samples.DefaultCommonAttack;
-import inklingMod.cards.samples.DefaultCommonPower;
-import inklingMod.cards.samples.DefaultCommonSkill;
-import inklingMod.cards.samples.DefaultRareAttack;
-import inklingMod.cards.samples.DefaultRarePower;
-import inklingMod.cards.samples.DefaultRareSkill;
-import inklingMod.cards.samples.DefaultSecondMagicNumberSkill;
-import inklingMod.cards.samples.DefaultUncommonAttack;
-import inklingMod.cards.samples.DefaultUncommonPower;
-import inklingMod.cards.samples.DefaultUncommonSkill;
-import inklingMod.cards.samples.OrbSkill;
+import inklingMod.cards.Defend;
+import inklingMod.cards.Strike;
 import inklingMod.relics.DefaultClickableRelic;
 import inklingMod.relics.PlaceholderRelic;
 import inklingMod.relics.PlaceholderRelic2;
@@ -163,26 +153,23 @@ public class TheInkling extends CustomPlayer {
     // Starting Deck
     @Override
     public ArrayList<String> getStartingDeck() {
-        ArrayList<String> retVal = new ArrayList<>();
-
-        logger.info("Begin loading starter Deck Strings");
-
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
-
-        retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
-        return retVal;
+        ArrayList<String> startingDeck = new ArrayList<>();
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Strike.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        startingDeck.add(Defend.ID);
+        return startingDeck;
     }
 
     // Starting Relics
@@ -253,7 +240,7 @@ public class TheInkling extends CustomPlayer {
     // Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new Strike();
     }
 
     // The class name as it appears next to your player name in-game
