@@ -122,7 +122,7 @@ public class IdentityCrisisEvent extends AbstractImageEvent {
                         break;
                     case 3: // If you press button the fourth button (Button at index 3), in this case:
                             // TOUCH
-                        imageEventText.loadImage("theDefaultResources/images/events/IdentityCrisisEvent2.png"); // Change
+                        imageEventText.loadImage("inklingModResources/images/events/IdentityCrisisEvent2.png"); // Change
                                                                                                                 // the
                                                                                                                 // shown
                                                                                                                 // image

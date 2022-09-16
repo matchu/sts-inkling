@@ -86,17 +86,17 @@ public class TheDefault extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "theDefaultResources/images/char/defaultCharacter/orb/layer1.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer2.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer3.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer4.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer5.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer6.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer1d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer2d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer3d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer4d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer5d.png", };
+            "inklingModResources/images/char/defaultCharacter/orb/layer1.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer2.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer3.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer4.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer5.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer6.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer1d.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer2d.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer3d.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer4d.png",
+            "inklingModResources/images/char/defaultCharacter/orb/layer5d.png", };
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -104,9 +104,9 @@ public class TheDefault extends CustomPlayer {
 
     public TheDefault(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "theDefaultResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "inklingModResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "theDefaultResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "inklingModResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 

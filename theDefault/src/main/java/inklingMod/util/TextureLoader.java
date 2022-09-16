@@ -21,7 +21,7 @@ public class TextureLoader {
      * @param textureString - String path to the texture you want to load relative
      *                      to resources,
      *                      Example:
-     *                      "theDefaultResources/images/ui/missing_texture.png"
+     *                      "inklingModResources/images/ui/missing_texture.png"
      * @return <b>com.badlogic.gdx.graphics.Texture</b> - The texture from the path
      *         provided
      */
@@ -31,7 +31,7 @@ public class TextureLoader {
                 loadTexture(textureString);
             } catch (GdxRuntimeException e) {
                 logger.error("Could not find texture: " + textureString);
-                return getTexture("theDefaultResources/images/ui/missing_texture.png");
+                return getTexture("inklingModResources/images/ui/missing_texture.png");
             }
         }
         return textures.get(textureString);
