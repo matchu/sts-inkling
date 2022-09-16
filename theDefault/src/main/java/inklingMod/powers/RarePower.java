@@ -2,7 +2,7 @@ package inklingMod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import inklingMod.InklingMod;
-import inklingMod.cards.DefaultRareAttack;
+import inklingMod.cards.samples.DefaultRareAttack;
 import inklingMod.util.TextureLoader;
 
 import com.badlogic.gdx.graphics.Texture;

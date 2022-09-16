@@ -1,4 +1,4 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import static inklingMod.InklingMod.makeCardPath;
 
@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 
 import inklingMod.InklingMod;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 
 public class DefaultUncommonSkill extends AbstractDynamicCard {

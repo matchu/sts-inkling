@@ -1,7 +1,8 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import basemod.AutoAdd;
 import inklingMod.InklingMod;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 
 import static inklingMod.InklingMod.makeCardPath;

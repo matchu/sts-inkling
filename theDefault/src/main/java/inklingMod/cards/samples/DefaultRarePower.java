@@ -1,7 +1,8 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import basemod.helpers.BaseModCardTags;
 import inklingMod.InklingMod;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 import inklingMod.powers.RarePower;
 

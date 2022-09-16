@@ -1,4 +1,4 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;

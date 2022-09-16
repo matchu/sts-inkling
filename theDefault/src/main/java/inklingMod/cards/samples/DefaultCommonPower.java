@@ -1,6 +1,7 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import inklingMod.InklingMod;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 import inklingMod.powers.CommonPower;
 

@@ -1,4 +1,4 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import static inklingMod.InklingMod.makeCardPath;
 
@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import inklingMod.InklingMod;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 
 public class DefaultSecondMagicNumberSkill extends AbstractDynamicCard {

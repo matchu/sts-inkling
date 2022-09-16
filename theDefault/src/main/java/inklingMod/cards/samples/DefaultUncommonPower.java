@@ -1,7 +1,8 @@
-package inklingMod.cards;
+package inklingMod.cards.samples;
 
 import inklingMod.InklingMod;
 import inklingMod.actions.UncommonPowerAction;
+import inklingMod.cards.AbstractDynamicCard;
 import inklingMod.characters.TheInkling;
 
 import static inklingMod.InklingMod.makeCardPath;
