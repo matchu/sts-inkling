@@ -283,13 +283,13 @@ public class InklingMod implements
 
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheInkling.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + TheInkling.Enums.THE_INKLING.toString());
 
-        BaseMod.addCharacter(new TheInkling("the Default", TheInkling.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheInkling.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new TheInkling("the Inkling", TheInkling.Enums.THE_INKLING),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheInkling.Enums.THE_INKLING);
 
         receiveEditPotions();
-        logger.info("Added " + TheInkling.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + TheInkling.Enums.THE_INKLING.toString());
     }
 
     // =============== /LOAD THE CHARACTER/ =================
@@ -359,7 +359,7 @@ public class InklingMod implements
                                                                                                                    // specific
                                                                                                                    // event
                 .dungeonID(TheCity.ID) // The dungeon (act) this event will appear in
-                .playerClass(TheInkling.Enums.THE_DEFAULT) // Character specific event
+                .playerClass(TheInkling.Enums.THE_INKLING) // Character specific event
                 .create();
 
         // Add the event
@@ -381,7 +381,7 @@ public class InklingMod implements
         // "TheDefaultEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
         BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID,
-                PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheInkling.Enums.THE_DEFAULT);
+                PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheInkling.Enums.THE_INKLING);
 
         logger.info("Done editing potions");
     }
