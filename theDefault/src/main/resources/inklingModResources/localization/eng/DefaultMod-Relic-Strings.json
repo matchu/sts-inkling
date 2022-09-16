@@ -1,4 +1,9 @@
 {
+  "inklingMod:FreshKicks": {
+    "NAME": "Fresh Kicks",
+    "FLAVOR": "Lookin' sharp! Or, well, damp?",
+    "DESCRIPTIONS": ["When you resurface from swimming, draw a card."]
+  },
   "inklingMod:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",

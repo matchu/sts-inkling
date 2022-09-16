@@ -10,6 +10,7 @@ import inklingMod.events.IdentityCrisisEvent;
 import inklingMod.potions.PlaceholderPotion;
 import inklingMod.relics.BottledPlaceholderRelic;
 import inklingMod.relics.DefaultClickableRelic;
+import inklingMod.relics.FreshKicks;
 import inklingMod.relics.PlaceholderRelic;
 import inklingMod.relics.PlaceholderRelic2;
 import inklingMod.util.IDCheckDontTouchPls;
@@ -405,6 +406,7 @@ public class InklingMod implements
 
         // This adds a character specific relic. Only when you play with the mentioned
         // color, will you get this relic.
+        BaseMod.addRelicToCustomPool(new FreshKicks(), TheInkling.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheInkling.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheInkling.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheInkling.Enums.COLOR_GRAY);
