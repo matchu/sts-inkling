@@ -119,7 +119,7 @@ public class InklingMod implements
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "inklingModResources/images/1024/card_default_gray_orb.png";
 
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "inklingModResources/images/charSelect/DefaultCharacterButton.png";
+    private static final String THE_INKLING_BUTTON = "inklingModResources/images/charSelect/InklingCharacterButton.png";
     private static final String THE_INKLING_PORTRAIT = "inklingModResources/images/charSelect/InklingCharacterPortraitBG.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "inklingModResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "inklingModResources/images/char/defaultCharacter/shoulder2.png";
@@ -287,7 +287,7 @@ public class InklingMod implements
         logger.info("Beginning to edit characters. " + "Add " + TheInkling.Enums.THE_INKLING.toString());
 
         BaseMod.addCharacter(new TheInkling("the Inkling", TheInkling.Enums.THE_INKLING),
-                THE_DEFAULT_BUTTON, THE_INKLING_PORTRAIT, TheInkling.Enums.THE_INKLING);
+                THE_INKLING_BUTTON, THE_INKLING_PORTRAIT, TheInkling.Enums.THE_INKLING);
 
         receiveEditPotions();
         logger.info("Added " + TheInkling.Enums.THE_INKLING.toString());
