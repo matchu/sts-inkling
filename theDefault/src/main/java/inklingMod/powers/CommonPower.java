@@ -73,6 +73,7 @@ public class CommonPower extends AbstractPower implements CloneablePowerInterfac
 
     // At the end of the turn, remove gained Dexterity.
     @Override
+    @SuppressWarnings("unused")
     public void atEndOfTurn(final boolean isPlayer) {
         int count = 0;
         for (final AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {

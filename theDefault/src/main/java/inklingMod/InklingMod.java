@@ -272,7 +272,7 @@ public class InklingMod implements
 
     public static void initialize() {
         logger.info("========================= Initializing Default Mod. Hi. =========================");
-        InklingMod defaultmod = new InklingMod();
+        new InklingMod();
         logger.info("========================= /Default Mod Initialized. Hello World./ =========================");
     }
 

@@ -1,8 +1,6 @@
 package inklingMod.cards;
 
-import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import inklingMod.InklingMod;
 import inklingMod.characters.TheInkling;
 
@@ -16,7 +14,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 // Well every card, at the end of the day, extends CustomCard.
 // Abstract Default Card extends CustomCard and builds up on it, adding a second magic number. Your card can extend it and

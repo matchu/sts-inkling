@@ -1,6 +1,5 @@
 package inklingMod.cards;
 
-import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
 import inklingMod.characters.TheInkling;
 import inklingMod.orbs.DefaultOrb;

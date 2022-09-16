@@ -1,6 +1,5 @@
 package inklingMod.cards;
 
-import basemod.AutoAdd;
 import basemod.abstracts.CustomCard;
 
 public abstract class AbstractDefaultCard extends CustomCard {

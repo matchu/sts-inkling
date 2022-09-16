@@ -1,6 +1,5 @@
 package inklingMod.cards;
 
-import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
 import inklingMod.actions.UncommonPowerAction;
 import inklingMod.characters.TheInkling;
@@ -12,7 +11,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class DefaultUncommonPower extends AbstractDynamicCard {
 

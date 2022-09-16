@@ -1,7 +1,5 @@
 package inklingMod.cards;
 
-import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import inklingMod.InklingMod;
 import inklingMod.characters.TheInkling;
 
@@ -9,9 +7,7 @@ import static inklingMod.InklingMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class DefaultCommonSkill extends AbstractDynamicCard {
