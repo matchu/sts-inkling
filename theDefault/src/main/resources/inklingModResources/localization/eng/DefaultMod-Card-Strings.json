@@ -9,8 +9,8 @@
   },
   "inklingMod:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! inklingMod:Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! inklingMod:Keywords."
+    "DESCRIPTION": "Gain !M! inklingmod:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! inklingmod:Keywords."
   },
   "inklingMod:DefaultUncommonAttack": {
     "NAME": "Big slap",
@@ -22,8 +22,8 @@
   },
   "inklingMod:DefaultUncommonPower": {
     "NAME": "Weirdness",
-    "DESCRIPTION": "Gain X inklingMod:Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 inklingMod:Keywords."
+    "DESCRIPTION": "Gain X inklingmod:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 inklingmod:Keywords."
   },
   "inklingMod:DefaultRareAttack": {
     "NAME": "TOUCH",
