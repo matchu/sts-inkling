@@ -25,8 +25,8 @@ public class SplatBomb extends CustomCard {
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
   private static final int COST = 1;
-  private static final int INK_AMOUNT = 6;
-  private static final int UPGRADE_ADDITIONAL_INK_AMOUNT = 4;
+  private static final int INK_AMOUNT = 5;
+  private static final int UPGRADE_ADDITIONAL_INK_AMOUNT = 3;
 
   public SplatBomb() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

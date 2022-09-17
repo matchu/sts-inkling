@@ -27,7 +27,7 @@ public class ToxicMist extends CustomCard {
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
   private static final int COST = 1;
-  private static final int TURN_COUNT = 2;
+  private static final int TURN_COUNT = 1;
   private static final int UPGRADE_PLUS_TURN_COUNT = 1;
 
   public ToxicMist() {
