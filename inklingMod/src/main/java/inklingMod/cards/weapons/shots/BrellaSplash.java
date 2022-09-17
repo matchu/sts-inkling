@@ -39,6 +39,7 @@ public class BrellaSplash extends CustomCard {
     this.baseMagicNumber = INK;
     this.magicNumber = this.baseMagicNumber;
     this.isEthereal = true;
+    this.exhaust = true;
   }
 
   @Override
