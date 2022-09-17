@@ -19,7 +19,7 @@ public class SplatBomb extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
   public static final String IMG = InklingMod.makeCardPath("SplatBomb.png");
-  private static final CardRarity RARITY = CardRarity.BASIC;
+  private static final CardRarity RARITY = CardRarity.COMMON;
   private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
   private static final CardType TYPE = CardType.SKILL;
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;

@@ -21,7 +21,7 @@ public class SplattershotJr extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
   public static final String IMG = InklingMod.makeCardPath("SplattershotJr.png");
-  private static final CardRarity RARITY = CardRarity.BASIC;
+  private static final CardRarity RARITY = CardRarity.COMMON;
   private static final CardTarget TARGET = CardTarget.SELF;
   private static final CardType TYPE = CardType.POWER;
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
