@@ -1,11 +1,11 @@
 {
   "inklingMod:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage. NL woomy!"
+    "DESCRIPTION": "Deal !D! damage."
   },
   "inklingMod:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL veemo!"
+    "DESCRIPTION": "Gain !B! Block."
   },
   "inklingMod:Dive": {
     "NAME": "Dive!",
