@@ -3,7 +3,9 @@ package inklingMod.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -45,6 +47,17 @@ public class SwimmingPower extends AbstractPower implements CloneablePowerInterf
 
   public void updateDescription() {
     this.description = DESCRIPTIONS[0];
+  }
+
+  @Override
+  public boolean canPlayCard(AbstractCard card) {
+    return (card.type != AbstractCard.CardType.ATTACK);
+  }
+
+  @Override
+  public void onAfterCardPlayed(AbstractCard card) {
+    flash();
+    addToBot(new GainEnergyAction(1));
   }
 
   @Override
