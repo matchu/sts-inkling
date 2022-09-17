@@ -28,6 +28,14 @@
     "NAME": "Weapon: Splat Brella+",
     "DESCRIPTIONS": ["Add a #yBrella #ySplash+ to your hand each turn."]
   },
+  "inklingMod:TriStringerPower": {
+    "NAME": "Weapon: Tri-Stringer",
+    "DESCRIPTIONS": ["Add 3 #yTri-Shots to your hand each turn."]
+  },
+  "inklingMod:TriStringerPlusPower": {
+    "NAME": "Weapon: Tri-Stringer+",
+    "DESCRIPTIONS": ["Add 3 #yTri-Shots+ to your hand each turn."]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

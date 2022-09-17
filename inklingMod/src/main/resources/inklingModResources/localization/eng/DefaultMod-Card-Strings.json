@@ -42,6 +42,15 @@
     "NAME": "Brella Splash",
     "DESCRIPTION": "Ethereal. NL Apply !M! inklingmod:Ink. Gain !B! Block. Exhaust."
   },
+  "inklingMod:TriStringer": {
+    "NAME": "Tri-Stringer",
+    "DESCRIPTION": "inklingmod:Weapon. Add 3 *Tri-Shots to your hand each turn.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Weapon. Add 3 *Tri-Shots+ to your hand each turn."
+  },
+  "inklingMod:TriShot": {
+    "NAME": "Tri-Shot",
+    "DESCRIPTION": "Ethereal. Deal !D! damage. Apply !M! Ink. Exhaust."
+  },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
