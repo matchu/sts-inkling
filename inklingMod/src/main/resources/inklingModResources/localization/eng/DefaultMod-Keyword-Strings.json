@@ -1,9 +1,10 @@
 [
   {
-    "NAMES": [
-      "keyword",
-      "keywords"
-    ],
+    "NAMES": ["swim"],
+    "DESCRIPTION": "Can't attack, gain #b1 [E] after playing a card. Lasts until your next turn."
+  },
+  {
+    "NAMES": ["keyword", "keywords"],
     "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
   },
   {

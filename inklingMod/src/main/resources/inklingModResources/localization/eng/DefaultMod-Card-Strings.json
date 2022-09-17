@@ -9,8 +9,8 @@
   },
   "inklingMod:Dive": {
     "NAME": "Dive!",
-    "DESCRIPTION": "Swim until the start of your next turn. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Swim until the start of your next turn. NL Draw !M! cards."
+    "DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! cards."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
@@ -18,7 +18,7 @@
   },
   "inklingMod:DefaultCommonSkill": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL inklingMod:Multiword_Keyword."
+    "DESCRIPTION": "Gain !B! Block. NL inklingmod:Multiword_Keyword."
   },
   "inklingMod:DefaultCommonPower": {
     "NAME": "Hold Place",
