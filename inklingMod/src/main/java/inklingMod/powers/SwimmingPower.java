@@ -2,7 +2,6 @@ package inklingMod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -65,13 +64,19 @@ public class SwimmingPower extends AbstractPower implements CloneablePowerInterf
     flash();
     addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
 
-    // It's hard for relics to listen for this event, so we check for the
-    // relics here, and trigger their stuff on their behalf!
     if (this.owner.isPlayer) {
       AbstractPlayer player = (AbstractPlayer) this.owner;
+
+      // It's hard for powers to listen for this event, so we check for the
+      // powers here, and trigger stuff on their behalf!
+      if (player.hasPower(SurprisePower.POWER_ID)) {
+        ((SurprisePower) player.getPower(SurprisePower.POWER_ID)).onResurface();
+      }
+
+      // It's hard for relics to listen for this event, so we check for the
+      // relics here, and trigger their stuff on their behalf!
       if (player.hasRelic(FreshKicks.ID)) {
-        player.getRelic(FreshKicks.ID).flash();
-        addToBot(new DrawCardAction(1));
+        ((FreshKicks) player.getRelic(FreshKicks.ID)).onResurface();
       }
     }
   }

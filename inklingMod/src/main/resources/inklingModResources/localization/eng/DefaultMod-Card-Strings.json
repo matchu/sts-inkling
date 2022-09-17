@@ -12,6 +12,11 @@
     "DESCRIPTION": "inklingmod:Swim. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "inklingmod:Swim. NL Draw !M! cards."
   },
+  "inklingMod:Surprise": {
+    "NAME": "Surprise!",
+    "DESCRIPTION": "inklingmod:Swim. NL When you resurface, apply !M! inklingmod:Ink to a random enemy.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Swim. NL When you resurface, apply !M! inklingmod:Ink to a random enemy. NL Draw a card."
+  },
   "inklingMod:Retreat": {
     "NAME": "Retreat!",
     "DESCRIPTION": "inklingmod:Swim. NL Gain !B! Block."

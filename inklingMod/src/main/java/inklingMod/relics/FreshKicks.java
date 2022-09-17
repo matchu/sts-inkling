@@ -1,6 +1,7 @@
 package inklingMod.relics;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 
 import basemod.abstracts.CustomRelic;
 import inklingMod.InklingMod;
@@ -16,10 +17,12 @@ public class FreshKicks extends CustomRelic {
     super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
   }
 
-  // NOTE: The effect is applied in `SwimmingPower`, because relics don't seem
-  // to have a good way to listen for power changes. We could implement this as
-  // a stance, but that's not especially built into basemod either, we'd need
-  // to look deeper at how Downfall does it!
+  // NOTE: We don't know how to have relics listen for power removals, so we
+  // have SwimmingPower manually call `onResurface` for us!
+  public void onResurface() {
+    flash();
+    addToBot(new DrawCardAction(1));
+  }
 
   @Override
   public String getUpdatedDescription() {

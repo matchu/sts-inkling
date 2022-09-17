@@ -12,6 +12,10 @@
       " more damage from #yAttacks. Each turn, reduces by 50%."
     ]
   },
+  "inklingMod:SurprisePower": {
+    "NAME": "Surprise!",
+    "DESCRIPTIONS": ["When you resurface, apply #b", " Ink to a random enemy."]
+  },
   "inklingMod:SplattershotJrPower": {
     "NAME": "Weapon: Splattershot Jr.",
     "DESCRIPTIONS": ["Add 2 #yJunior #yShots to your hand each turn."]
