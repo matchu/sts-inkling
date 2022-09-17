@@ -4,6 +4,10 @@
     "DESCRIPTION": "Can't attack, gain #b1 [E] after playing a card. Lasts until your next turn."
   },
   {
+    "NAMES": ["ink"],
+    "DESCRIPTION": "Inked creatures take more damage from Attacks, equal to their Ink. Each turn, Ink is reduced by #b50%."
+  },
+  {
     "NAMES": ["keyword", "keywords"],
     "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
   },

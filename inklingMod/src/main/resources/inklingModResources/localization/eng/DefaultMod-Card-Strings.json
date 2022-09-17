@@ -12,6 +12,10 @@
     "DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! cards."
   },
+  "inklingMod:SplatBomb": {
+    "NAME": "Splat Bomb",
+    "DESCRIPTION": "Apply !M! inklingmod:Ink to all enemies."
+  },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
