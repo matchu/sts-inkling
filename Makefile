@@ -1,3 +1,3 @@
 .PHONY: watch
 watch:
-	cd theDefault && find . | entr mvn package
+	cd inklingMod && find . | entr mvn package
