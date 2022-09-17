@@ -26,8 +26,8 @@ public class TriShot extends CustomCard {
   public static final CardColor COLOR = CardColor.COLORLESS;
 
   private static final int COST = 1;
-  private static final int DAMAGE = 6;
-  private static final int INK = 3;
+  private static final int DAMAGE = 3;
+  private static final int INK = 6;
   private static final int UPGRADE_PLUS_DMG = 3;
 
   public TriShot() {
