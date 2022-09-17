@@ -49,7 +49,20 @@
   },
   "inklingMod:TriShot": {
     "NAME": "Tri-Shot",
-    "DESCRIPTION": "Ethereal. Deal !D! damage. Apply !M! Ink. Exhaust."
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. Apply !M! Ink. Exhaust."
+  },
+  "inklingMod:DynamoRoller": {
+    "NAME": "Dynamo Roller",
+    "DESCRIPTION": "inklingmod:Weapon. Add a *Dyna *Roll and *Dyna *Splash to your hand each turn.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Weapon. Add a *Dyna *Roll+ and *Dyna *Splash+ to your hand each turn."
+  },
+  "inklingMod:DynaRoll": {
+    "NAME": "Dyna Roll",
+    "DESCRIPTION": "Ethereal. NL Apply !M! inklingmod:Ink to all enemies. Draw a card. Exhaust."
+  },
+  "inklingMod:DynaSplash": {
+    "NAME": "Dyna Splash",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage to all enemies. Exhaust."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",

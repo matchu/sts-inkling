@@ -435,7 +435,7 @@
       "  public void use(AbstractPlayer p, AbstractMonster m) {",
       "    addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),",
       "        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));",
-      "    addToBot(new ApplyPowerAction(m, p, new InkPower(m, INK), INK));",
+      "    addToBot(new ApplyPowerAction(m, p, new InkPower(m, this.magicNumber), this.magicNumber));",
       "  }",
       "",
       "  @Override",

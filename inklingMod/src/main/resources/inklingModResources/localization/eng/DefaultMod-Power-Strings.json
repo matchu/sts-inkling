@@ -36,6 +36,18 @@
     "NAME": "Weapon: Tri-Stringer+",
     "DESCRIPTIONS": ["Add 3 #yTri-Shots+ to your hand each turn."]
   },
+  "inklingMod:DynamoRollerPower": {
+    "NAME": "Weapon: Dynamo Roller",
+    "DESCRIPTIONS": [
+      "Add a #yDyna #yRoll and #yDyna #ySplash to your hand each turn."
+    ]
+  },
+  "inklingMod:DynamoRollerPlusPower": {
+    "NAME": "Weapon: Dynamo Roller+",
+    "DESCRIPTIONS": [
+      "Add a #yDyna #yRoll+ and #yDyna #ySplash+ to your hand each turn."
+    ]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
