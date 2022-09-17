@@ -88,6 +88,10 @@
     "DESCRIPTION": "Ethereal. While inklingmod:swimming, reduce all damage taken from attacks to 1.",
     "UPGRADE_DESCRIPTION": "While inklingmod:swimming, reduce all damage taken from attacks to 1."
   },
+  "inklingMod:KillerWail5Point1": {
+    "NAME": "Killer Wail 5.1",
+    "DESCRIPTION": "Deal !D! damage to a random enemy 6 times. Exhaust."
+  },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
