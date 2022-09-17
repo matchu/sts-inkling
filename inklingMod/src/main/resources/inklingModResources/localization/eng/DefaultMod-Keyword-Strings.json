@@ -1,6 +1,6 @@
 [
   {
-    "NAMES": ["swim"],
+    "NAMES": ["swim", "swimming"],
     "DESCRIPTION": "Can't attack, gain #b1 [E] after playing a card. Lasts until your next turn."
   },
   {

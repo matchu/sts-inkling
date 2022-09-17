@@ -52,6 +52,12 @@
       "Add a #yDyna #yRoll+ and #yDyna #ySplash+ to your hand each turn."
     ]
   },
+  "inklingMod:NinjaSquidPower": {
+    "NAME": "Ninja Squid",
+    "DESCRIPTIONS": [
+      "While inklingmod:swimming, reduce all damage taken from attacks to 1."
+    ]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

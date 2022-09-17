@@ -79,6 +79,11 @@
     "DESCRIPTION": "Shuffle a *Booyah! into your draw pile. NL Draw a card.",
     "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Booyah! into your draw pile. NL Draw a card."
   },
+  "inklingMod:NinjaSquid": {
+    "NAME": "Ninja Squid",
+    "DESCRIPTION": "Ethereal. While inklingmod:swimming, reduce all damage taken from attacks to 1.",
+    "UPGRADE_DESCRIPTION": "While inklingmod:swimming, reduce all damage taken from attacks to 1."
+  },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
