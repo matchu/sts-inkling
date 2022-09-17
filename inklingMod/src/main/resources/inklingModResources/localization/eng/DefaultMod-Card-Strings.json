@@ -31,8 +31,8 @@
   },
   "inklingMod:ToxicMist": {
     "NAME": "Toxic Mist",
-    "DESCRIPTION": "Apply Weak !M! and Frail !M! to all enemies. Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate. Apply Weak !M! and Frail !M! to all enemies. Draw a card."
+    "DESCRIPTION": "Apply Weak !M! and Frail !M! to all enemies. NL Draw a card.",
+    "UPGRADE_DESCRIPTION": "Innate. Apply Weak !M! and Frail !M! to all enemies. NL Draw a card."
   },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
@@ -73,6 +73,11 @@
   "inklingMod:DynaSplash": {
     "NAME": "Dyna Splash",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage to all enemies. Exhaust."
+  },
+  "inklingMod:Booyah": {
+    "NAME": "Booyah!",
+    "DESCRIPTION": "Shuffle a *Booyah! into your draw pile. NL Draw a card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Booyah! into your draw pile. NL Draw a card."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
