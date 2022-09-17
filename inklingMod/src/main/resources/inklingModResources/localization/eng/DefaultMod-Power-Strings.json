@@ -12,6 +12,14 @@
       " more damage from #yAttacks. Each turn, reduces by 50%."
     ]
   },
+  "inklingMod:SplattershotJrPower": {
+    "NAME": "Splattershot Jr.",
+    "DESCRIPTIONS": ["Add 2 #yJunior #yShots to your hand each turn."]
+  },
+  "inklingMod:SplattershotJrPlusPower": {
+    "NAME": "Splattershot Jr.+",
+    "DESCRIPTIONS": ["Add 2 #yJunior #yShots+ to your hand each turn."]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

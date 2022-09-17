@@ -16,6 +16,15 @@
     "NAME": "Splat Bomb",
     "DESCRIPTION": "Apply !M! inklingmod:Ink to all enemies."
   },
+  "inklingMod:SplattershotJr": {
+    "NAME": "Splattershot Jr.",
+    "DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots to your hand each turn.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots+ to your hand each turn."
+  },
+  "inklingMod:JuniorShot": {
+    "NAME": "Junior Shot",
+    "DESCRIPTION": "Ethereal. Deal !D! damage. NL Apply !M! inklingmod:Ink."
+  },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

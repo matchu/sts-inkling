@@ -8,6 +8,10 @@
     "DESCRIPTION": "Inked creatures take more damage from Attacks, equal to their Ink. Each turn, Ink is reduced by #b50%."
   },
   {
+    "NAMES": ["weapon"],
+    "DESCRIPTION": "You can only wield one weapon at a time. If you already have one equipped, it returns to your discard pile."
+  },
+  {
     "NAMES": ["keyword", "keywords"],
     "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
   },
