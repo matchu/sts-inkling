@@ -26,7 +26,7 @@ public class SplattershotJr extends CustomCard {
   private static final CardType TYPE = CardType.POWER;
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
-  private static final int COST = 1;
+  private static final int COST = 2;
 
   public SplattershotJr() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
