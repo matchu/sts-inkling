@@ -1,6 +1,7 @@
 package inklingMod.cards;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,22 +25,26 @@ public class Booyah extends CustomCard {
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
   private static final int COST = 0;
+  private static final int DRAW = 1;
+  private static final int UPGRADE_PLUS_DRAW = 1;
 
   public Booyah() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+    this.baseMagicNumber = DRAW;
+    this.magicNumber = this.baseMagicNumber;
   }
 
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
-    addToBot(new MakeTempCardInDrawPileAction(new Booyah(), 1, true, true));
-    addToBot(new DrawCardAction(1));
+    addToBot(new MakeTempCardInDiscardAction(new Booyah(), 1));
+    addToBot(new DrawCardAction(this.magicNumber));
   }
 
   @Override
   public void upgrade() {
     if (!upgraded) {
       upgradeName();
-      this.isInnate = true;
+      upgradeMagicNumber(UPGRADE_PLUS_DRAW);
       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
       initializeDescription();
     }

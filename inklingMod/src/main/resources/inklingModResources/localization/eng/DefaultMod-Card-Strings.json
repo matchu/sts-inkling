@@ -80,8 +80,8 @@
   },
   "inklingMod:Booyah": {
     "NAME": "Booyah!",
-    "DESCRIPTION": "Shuffle a *Booyah! into your draw pile. NL Draw a card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Booyah! into your draw pile. NL Draw a card."
+    "DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! cards."
   },
   "inklingMod:NinjaSquid": {
     "NAME": "Ninja Squid",
