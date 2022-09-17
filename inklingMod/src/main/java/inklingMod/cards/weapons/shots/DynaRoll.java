@@ -28,7 +28,7 @@ public class DynaRoll extends CustomCard {
   public static final CardColor COLOR = CardColor.COLORLESS;
 
   private static final int COST = 1;
-  private static final int INK = 2;
+  private static final int INK = 4;
   private static final int UPGRADE_PLUS_INK = 2;
 
   public DynaRoll() {
