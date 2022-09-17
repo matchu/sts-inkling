@@ -12,6 +12,10 @@
     "DESCRIPTION": "inklingmod:Swim. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "inklingmod:Swim. NL Draw !M! cards."
   },
+  "inklingMod:Retreat": {
+    "NAME": "Retreat!",
+    "DESCRIPTION": "inklingmod:Swim. NL Gain !B! Block."
+  },
   "inklingMod:SplatBomb": {
     "NAME": "Splat Bomb",
     "DESCRIPTION": "Apply !M! inklingmod:Ink to all enemies."
