@@ -34,6 +34,10 @@
     "DESCRIPTION": "Apply Weak !M! and Frail !M! to all enemies. NL Draw a card.",
     "UPGRADE_DESCRIPTION": "Innate. Apply Weak !M! and Frail !M! to all enemies. NL Draw a card."
   },
+  "inklingMod:FizzyBomb": {
+    "NAME": "Fizzy Bomb",
+    "DESCRIPTION": "Deal !D! damage X times. Apply !M! Ink X times. NL Repeat for X enemies total, chosen randomly. NL (NOT BUILT YET)"
+  },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
     "DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots to your hand each turn.",
