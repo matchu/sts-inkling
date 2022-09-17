@@ -49,7 +49,7 @@ public class DynaRoll extends CustomCard {
       for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
         if (!monster.isDead && !monster.isDying) {
           addToBot(new ApplyPowerAction(
-              monster, p, new InkPower(m, this.magicNumber), this.magicNumber));
+              monster, p, new InkPower(monster, this.magicNumber), this.magicNumber));
         }
       }
     }
