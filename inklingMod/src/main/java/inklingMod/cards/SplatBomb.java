@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
 import inklingMod.characters.TheInkling;
+import inklingMod.powers.InkPower;
 
 public class SplatBomb extends CustomCard {
   public static final String ID = InklingMod.makeID(SplatBomb.class.getSimpleName());
@@ -44,7 +44,7 @@ public class SplatBomb extends CustomCard {
       for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
         if (!monster.isDead && !monster.isDying) {
           addToBot(new ApplyPowerAction(
-              monster, p, new PoisonPower(monster, p, this.magicNumber), this.magicNumber));
+              monster, p, new InkPower(monster, this.magicNumber), this.magicNumber));
         }
       }
     }
