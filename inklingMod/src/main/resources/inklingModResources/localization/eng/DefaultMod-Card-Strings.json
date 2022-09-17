@@ -23,7 +23,7 @@
   },
   "inklingMod:JuniorShot": {
     "NAME": "Junior Shot",
-    "DESCRIPTION": "Ethereal. Deal !D! damage. NL Apply !M! inklingmod:Ink."
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Apply !M! inklingmod:Ink."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",

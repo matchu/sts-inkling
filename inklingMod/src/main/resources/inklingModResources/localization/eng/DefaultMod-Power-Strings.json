@@ -13,11 +13,11 @@
     ]
   },
   "inklingMod:SplattershotJrPower": {
-    "NAME": "Splattershot Jr.",
+    "NAME": "Weapon: Splattershot Jr.",
     "DESCRIPTIONS": ["Add 2 #yJunior #yShots to your hand each turn."]
   },
   "inklingMod:SplattershotJrPlusPower": {
-    "NAME": "Splattershot Jr.+",
+    "NAME": "Weapon: Splattershot Jr.+",
     "DESCRIPTIONS": ["Add 2 #yJunior #yShots+ to your hand each turn."]
   },
   "inklingMod:CommonPower": {
