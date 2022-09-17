@@ -20,6 +20,14 @@
     "NAME": "Weapon: Splattershot Jr.+",
     "DESCRIPTIONS": ["Add 2 #yJunior #yShots+ to your hand each turn."]
   },
+  "inklingMod:SplatBrellaPower": {
+    "NAME": "Weapon: Splat Brella",
+    "DESCRIPTIONS": ["Add a #yBrella #ySplash to your hand each turn."]
+  },
+  "inklingMod:SplatBrellaPlusPower": {
+    "NAME": "Weapon: Splat Brella+",
+    "DESCRIPTIONS": ["Add a #yBrella #ySplash+ to your hand each turn."]
+  },
   "inklingMod:CommonPower": {
     "NAME": "Placeholder Power",
     "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

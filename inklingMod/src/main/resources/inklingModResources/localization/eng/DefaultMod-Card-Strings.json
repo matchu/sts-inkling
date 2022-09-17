@@ -20,6 +20,10 @@
     "NAME": "Splat Bomb",
     "DESCRIPTION": "Apply !M! inklingmod:Ink to all enemies."
   },
+  "inklingMod:AngleShooter": {
+    "NAME": "Angle Shooter",
+    "DESCRIPTION": "Deal !D! damage twice, or 3 times if the enemy has Block."
+  },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
     "DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots to your hand each turn.",
@@ -28,6 +32,15 @@
   "inklingMod:JuniorShot": {
     "NAME": "Junior Shot",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Apply !M! inklingmod:Ink."
+  },
+  "inklingMod:SplatBrella": {
+    "NAME": "Splat Brella",
+    "DESCRIPTION": "inklingmod:Weapon. Add a *Brella *Splash to your hand each turn.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Weapon. Add a *Brella *Splash+ to your hand each turn."
+  },
+  "inklingMod:BrellaSplash": {
+    "NAME": "Brella Splash",
+    "DESCRIPTION": "Ethereal. Apply !M! inklingmod:Ink. Gain !B! Block."
   },
   "inklingMod:DefaultCommonAttack": {
     "NAME": "Strike",
