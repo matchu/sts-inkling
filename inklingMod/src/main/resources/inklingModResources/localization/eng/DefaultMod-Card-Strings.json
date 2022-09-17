@@ -24,6 +24,11 @@
     "NAME": "Angle Shooter",
     "DESCRIPTION": "Deal !D! damage twice, or 3 times if the enemy has Block."
   },
+  "inklingMod:ToxicMist": {
+    "NAME": "Toxic Mist",
+    "DESCRIPTION": "Apply Weak !M! and Frail !M! to all enemies. Draw a card.",
+    "UPGRADE_DESCRIPTION": "Innate. Apply Weak !M! and Frail !M! to all enemies. Draw a card."
+  },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
     "DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots to your hand each turn.",
