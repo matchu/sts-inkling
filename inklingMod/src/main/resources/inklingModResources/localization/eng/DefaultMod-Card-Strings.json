@@ -9,8 +9,8 @@
   },
   "inklingMod:Dive": {
     "NAME": "Dive!",
-    "DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "inklingmod:Swim until the start of your next turn. NL Draw !M! cards."
+    "DESCRIPTION": "inklingmod:Swim. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Swim. NL Draw !M! cards."
   },
   "inklingMod:SplatBomb": {
     "NAME": "Splat Bomb",
