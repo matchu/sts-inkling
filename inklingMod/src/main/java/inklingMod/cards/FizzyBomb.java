@@ -32,12 +32,13 @@ public class FizzyBomb extends CustomCard {
     this.baseDamage = DAMAGE;
     this.magicNumber = this.baseMagicNumber;
     this.exhaust = true;
+    this.isMultiDamage = true;
   }
 
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
     addToBot(new FizzyBombAction(p, this.freeToPlayOnce, this.energyOnUse,
-        this.damage, this.damageTypeForTurn));
+        this.multiDamage, this.damageTypeForTurn));
   }
 
   @Override

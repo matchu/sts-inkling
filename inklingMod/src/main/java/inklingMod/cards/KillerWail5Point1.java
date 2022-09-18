@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -34,28 +35,26 @@ public class KillerWail5Point1 extends CustomCard {
 
     this.baseDamage = DAMAGE;
     this.exhaust = true;
+    this.isMultiDamage = true;
   }
 
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-    addToBot(new DamageRandomEnemyAction(
-        new DamageInfo(p, this.damage, this.damageTypeForTurn),
-        AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+    if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+      for (int i = 0; i < 6; i++) {
+        // We have our card compute `multiDamage` so we know how much damage
+        // to do to each target. But we have to look up the monster's index in
+        // the monster list in order to know which `multiDamage` entry to use!
+        AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(
+            null, true, AbstractDungeon.cardRandomRng);
+        int monsterIndex = AbstractDungeon.getMonsters().monsters.indexOf(target);
+        int damage = this.multiDamage[monsterIndex];
+        addToBot(new DamageAction(target,
+            new DamageInfo(p, damage, this.damageTypeForTurn),
+            i % 2 == 0 ? AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+                : AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+      }
+    }
   }
 
   @Override

@@ -18,16 +18,16 @@ public class FizzyBombAction extends AbstractGameAction {
   private final AbstractPlayer player;
   private final boolean freeToPlayOnce;
   private final int energyOnUse;
-  private final int damage;
+  private final int[] multiDamage;
   private final DamageType damageType;
 
   public FizzyBombAction(
       final AbstractPlayer player, final boolean freeToPlayOnce,
-      final int energyOnUse, final int damage, final DamageType damageType) {
+      final int energyOnUse, final int[] multiDamage, final DamageType damageType) {
     this.player = player;
     this.freeToPlayOnce = freeToPlayOnce;
     this.energyOnUse = energyOnUse;
-    this.damage = damage;
+    this.multiDamage = multiDamage;
     this.damageType = damageType;
     // Not sure what these do, but the other X-cost actions I see are doing it too!
     this.duration = Settings.ACTION_DUR_XFAST;
@@ -50,8 +50,13 @@ public class FizzyBombAction extends AbstractGameAction {
           effect, AbstractDungeon.cardRandomRng);
       for (AbstractMonster target : targets) {
         for (int i = 0; i < effect; i++) {
+          // We have our card compute `multiDamage` so we know how much damage
+          // to do to each target. But we have to look up the monster's index in
+          // the monster list in order to know which `multiDamage` entry to use!
+          int monsterIndex = AbstractDungeon.getMonsters().monsters.indexOf(target);
+          int damage = this.multiDamage[monsterIndex];
           addToBot(new DamageAction(target,
-              new DamageInfo(this.player, this.damage, this.damageType),
+              new DamageInfo(this.player, damage, this.damageType),
               i % 2 == 0 ? AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
                   : AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
