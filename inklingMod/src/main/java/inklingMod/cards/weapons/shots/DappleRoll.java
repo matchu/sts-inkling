@@ -1,10 +1,6 @@
 package inklingMod.cards.weapons.shots;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,7 +8,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
-import inklingMod.powers.InkPower;
 
 public class DappleRoll extends CustomCard {
   public static final String ID = InklingMod.makeID(DappleRoll.class.getSimpleName());
@@ -28,7 +23,7 @@ public class DappleRoll extends CustomCard {
 
   private static final int COST = 0;
   private static final int BLOCK = 3;
-  private static final int UPGRADE_PLUS_BLOCK = 1;
+  private static final int UPGRADE_PLUS_BLOCK = 2;
 
   public DappleRoll() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
