@@ -35,7 +35,7 @@
   },
   "inklingMod:FizzyBomb": {
     "NAME": "Fizzy Bomb",
-    "DESCRIPTION": "Deal !D! damage X times. NL Repeat for X enemies total, chosen randomly. NL (NOT BUILT YET)"
+    "DESCRIPTION": "Deal !D! damage twice. NL Repeat for X enemies total, chosen randomly."
   },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",

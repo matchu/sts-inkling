@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
+import inklingMod.actions.FizzyBombAction;
 import inklingMod.characters.TheInkling;
 
 public class FizzyBomb extends CustomCard {
@@ -22,27 +23,27 @@ public class FizzyBomb extends CustomCard {
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
   private static final int COST = -1;
-  private static final int DAMAGE = 6;
-  private static final int INK = 2;
+  private static final int DAMAGE = 2;
+  private static final int UPGRADE_PLUS_DAMAGE = 2;
 
   public FizzyBomb() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 
     this.baseDamage = DAMAGE;
-    this.baseMagicNumber = INK;
     this.magicNumber = this.baseMagicNumber;
   }
 
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
-    // TODO!
+    addToBot(new FizzyBombAction(p, this.freeToPlayOnce, this.energyOnUse,
+        this.damage, this.damageTypeForTurn));
   }
 
   @Override
   public void upgrade() {
     if (!upgraded) {
       upgradeName();
-      // TODO!
+      upgradeDamage(UPGRADE_PLUS_DAMAGE);
       initializeDescription();
     }
   }
