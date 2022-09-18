@@ -77,6 +77,19 @@
     "NAME": "Dyna Splash",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage to all enemies. Exhaust."
   },
+  "inklingMod:DappleDualies": {
+    "NAME": "Dapple Dualies",
+    "DESCRIPTION": "inklingmod:Weapon. Add a *Dapple *Shot and a *Dapple *Roll to your hand each turn.",
+    "UPGRADE_DESCRIPTION": "inklingmod:Weapon. Add a *Dapple *Shot+ and a *Dapple *Roll+ to your hand each turn."
+  },
+  "inklingMod:DappleShot": {
+    "NAME": "Dapple Shot",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage twice. NL Exhaust."
+  },
+  "inklingMod:DappleRoll": {
+    "NAME": "Dapple Roll",
+    "DESCRIPTION": "Etheral. NL Gain !B! Block. NL Exhaust."
+  },
   "inklingMod:Booyah": {
     "NAME": "Booyah!",
     "DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! card.",
