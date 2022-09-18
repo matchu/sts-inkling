@@ -26,7 +26,7 @@ public class Retreat extends CustomCard {
 
   private static final int COST = 2;
   private static final int BLOCK = 12;
-  private static final int UPGRADE_PLUS_BLOCK = 3;
+  private static final int UPGRADE_PLUS_BLOCK = 4;
 
   public Retreat() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

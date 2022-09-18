@@ -28,7 +28,8 @@ public class JuniorShot extends CustomCard {
   private static final int COST = 0;
   private static final int DAMAGE = 4;
   private static final int INK = 2;
-  private static final int UPGRADE_PLUS_DMG = 2;
+  private static final int UPGRADE_PLUS_DMG = 1;
+  private static final int UPGRADE_PLUS_INK = 1;
 
   public JuniorShot() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -52,6 +53,7 @@ public class JuniorShot extends CustomCard {
     if (!upgraded) {
       upgradeName();
       upgradeDamage(UPGRADE_PLUS_DMG);
+      upgradeMagicNumber(UPGRADE_PLUS_INK);
       initializeDescription();
     }
   }

@@ -14,8 +14,7 @@
   },
   "inklingMod:Surprise": {
     "NAME": "Surprise!",
-    "DESCRIPTION": "inklingmod:Swim. NL When you resurface, apply !M! inklingmod:Ink to a random enemy.",
-    "UPGRADE_DESCRIPTION": "inklingmod:Swim. NL When you resurface, apply !M! inklingmod:Ink to a random enemy. NL Draw a card."
+    "DESCRIPTION": "inklingmod:Swim. NL When you resurface, apply !M! inklingmod:Ink to a random enemy."
   },
   "inklingMod:Retreat": {
     "NAME": "Retreat!",
@@ -36,7 +35,7 @@
   },
   "inklingMod:FizzyBomb": {
     "NAME": "Fizzy Bomb",
-    "DESCRIPTION": "Deal !D! damage X times. Apply !M! Ink X times. NL Repeat for X enemies total, chosen randomly. NL (NOT BUILT YET)"
+    "DESCRIPTION": "Deal !D! damage X times. NL Repeat for X enemies total, chosen randomly. NL (NOT BUILT YET)"
   },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
@@ -63,7 +62,7 @@
   },
   "inklingMod:TriShot": {
     "NAME": "Tri-Shot",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. Apply !M! Ink. Exhaust."
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Apply !M! Ink. Exhaust."
   },
   "inklingMod:DynamoRoller": {
     "NAME": "Dynamo Roller",
@@ -72,7 +71,7 @@
   },
   "inklingMod:DynaRoll": {
     "NAME": "Dyna Roll",
-    "DESCRIPTION": "Ethereal. NL Apply !M! inklingmod:Ink to all enemies. Draw a card. Exhaust."
+    "DESCRIPTION": "Ethereal. NL Apply !M! inklingmod:Ink to all enemies. NL Draw a card. Exhaust."
   },
   "inklingMod:DynaSplash": {
     "NAME": "Dyna Splash",

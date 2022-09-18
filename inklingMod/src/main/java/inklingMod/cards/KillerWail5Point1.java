@@ -25,7 +25,7 @@ public class KillerWail5Point1 extends CustomCard {
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
 
   private static final int COST = 3;
-  private static final int DAMAGE = 6;
+  private static final int DAMAGE = 3;
   private static final int UPGRADE_PLUS_DMG = 2;
 
   public KillerWail5Point1() {
