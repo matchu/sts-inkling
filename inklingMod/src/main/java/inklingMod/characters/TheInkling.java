@@ -108,7 +108,7 @@ public class TheInkling extends CustomPlayer {
         super(name, setClass, orbTextures,
                 "inklingModResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "inklingModResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "inklingModResources/images/char/theInkling/Inkling.scml"));
 
         // =============== TEXTURES, ENERGY, LOADOUT =================
 
