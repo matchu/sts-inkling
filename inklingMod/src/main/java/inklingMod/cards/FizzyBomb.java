@@ -31,6 +31,7 @@ public class FizzyBomb extends CustomCard {
 
     this.baseDamage = DAMAGE;
     this.magicNumber = this.baseMagicNumber;
+    this.exhaust = true;
   }
 
   @Override
