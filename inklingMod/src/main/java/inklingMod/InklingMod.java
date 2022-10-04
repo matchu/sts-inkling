@@ -399,19 +399,19 @@ public class InklingMod implements
 
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Card-Strings.json");
+                getModID() + "Resources/localization/eng/InklingMod-Card-Strings.json");
 
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Power-Strings.json");
+                getModID() + "Resources/localization/eng/InklingMod-Power-Strings.json");
 
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Relic-Strings.json");
+                getModID() + "Resources/localization/eng/InklingMod-Relic-Strings.json");
 
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Character-Strings.json");
+                getModID() + "Resources/localization/eng/InklingMod-Character-Strings.json");
 
         logger.info("Done edittting strings");
     }
@@ -436,7 +436,7 @@ public class InklingMod implements
         // a_long_keyword
 
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/DefaultMod-Keyword-Strings.json")
+        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/InklingMod-Keyword-Strings.json")
                 .readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json,
                 com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
