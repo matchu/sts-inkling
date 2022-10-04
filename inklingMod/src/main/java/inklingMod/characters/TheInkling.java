@@ -6,10 +6,7 @@ import inklingMod.InklingMod;
 import inklingMod.cards.Defend;
 import inklingMod.cards.Dive;
 import inklingMod.cards.Strike;
-import inklingMod.relics.DefaultClickableRelic;
 import inklingMod.relics.FreshKicks;
-import inklingMod.relics.PlaceholderRelic;
-import inklingMod.relics.PlaceholderRelic2;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -179,9 +176,6 @@ public class TheInkling extends CustomPlayer {
         // If you don't have this it won't be visible in the compendium until you see
         // them in game
         UnlockTracker.markRelicAsSeen(FreshKicks.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
 
         return retVal;
     }
