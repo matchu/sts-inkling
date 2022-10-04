@@ -4,7 +4,7 @@ import basemod.*;
 import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
-import inklingMod.cards.*;
+import inklingMod.cards.Strike;
 import inklingMod.characters.TheInkling;
 import inklingMod.events.IdentityCrisisEvent;
 import inklingMod.potions.PlaceholderPotion;
@@ -15,8 +15,6 @@ import inklingMod.relics.PlaceholderRelic;
 import inklingMod.relics.PlaceholderRelic2;
 import inklingMod.util.IDCheckDontTouchPls;
 import inklingMod.util.TextureLoader;
-import inklingMod.variables.DefaultCustomVariable;
-import inklingMod.variables.DefaultSecondMagicNumber;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -428,14 +426,8 @@ public class InklingMod implements
 
     @Override
     public void receiveEditCards() {
-        logger.info("Adding variables");
         // Ignore this
         pathCheck();
-        // Add the Custom Dynamic Variables
-        logger.info("Add variables");
-        // Add the Custom Dynamic variables
-        BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
 
         logger.info("Adding cards");
         // Add the cards
@@ -455,8 +447,8 @@ public class InklingMod implements
 
         // <Removed instructions to use artifactId here>
         new AutoAdd("InklingMod") // ${project.artifactId}
-                .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as
-                                                          // AbstractDefaultCard, nested packages included
+                .packageFilter(Strike.class) // filters to any class in the same package as
+                                             // AbstractDefaultCard, nested packages included
                 .setDefaultSeen(true)
                 .cards();
 
