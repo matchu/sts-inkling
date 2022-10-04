@@ -69,17 +69,5 @@
     "DESCRIPTIONS": [
       "While inklingmod:swimming, reduce all damage taken from attacks to 1."
     ]
-  },
-  "inklingMod:CommonPower": {
-    "NAME": "Placeholder Power",
-    "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-  },
-  "inklingMod:RarePower": {
-    "NAME": "Placeholder Power",
-    "DESCRIPTIONS": [
-      "At the start of your turn, TOUCH #b",
-      " enemy.",
-      " enemies."
-    ]
   }
 }
