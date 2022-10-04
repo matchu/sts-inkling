@@ -1,12 +1,10 @@
 package inklingMod;
 
 import basemod.*;
-import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import inklingMod.cards.Strike;
 import inklingMod.characters.TheInkling;
-import inklingMod.potions.PlaceholderPotion;
 import inklingMod.relics.BottledPlaceholderRelic;
 import inklingMod.relics.DefaultClickableRelic;
 import inklingMod.relics.FreshKicks;
@@ -286,7 +284,6 @@ public class InklingMod implements
         BaseMod.addCharacter(new TheInkling("the Inkling", TheInkling.Enums.THE_INKLING),
                 THE_INKLING_BUTTON, THE_INKLING_PORTRAIT, TheInkling.Enums.THE_INKLING);
 
-        receiveEditPotions();
         logger.info("Added " + TheInkling.Enums.THE_INKLING.toString());
     }
 
@@ -337,23 +334,6 @@ public class InklingMod implements
     }
 
     // =============== / POST-INITIALIZE/ =================
-
-    // ================ ADD POTIONS ===================
-
-    public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-
-        // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the
-        // "TheDefaultEnum.THE_DEFAULT".
-        // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID,
-                PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheInkling.Enums.THE_INKLING);
-
-        logger.info("Done editing potions");
-    }
-
-    // ================ /ADD POTIONS/ ===================
 
     // ================ ADD RELICS ===================
 
