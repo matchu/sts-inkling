@@ -117,10 +117,6 @@ public class InklingMod implements
     // mod.
     public static final String BADGE_IMAGE = "inklingModResources/images/Badge.png";
 
-    // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "inklingModResources/images/char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "inklingModResources/images/char/defaultCharacter/skeleton.json";
-
     // =============== MAKE IMAGE PATHS =================
 
     public static String makeCardPath(String resourcePath) {
