@@ -37,6 +37,10 @@
     "NAME": "Fizzy Bomb",
     "DESCRIPTION": "Deal !D! damage X times. NL Repeat for X enemies total, chosen randomly. NL Exhaust."
   },
+  "inklingMod:SplatWall": {
+    "NAME": "Splat Wall",
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, apply !M! Ink to the attacker."
+  },
   "inklingMod:SplattershotJr": {
     "NAME": "Splattershot Jr.",
     "DESCRIPTION": "inklingmod:Weapon. Add 2 *Junior *Shots to your hand each turn.",

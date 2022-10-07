@@ -14,7 +14,17 @@
   },
   "inklingMod:SurprisePower": {
     "NAME": "Surprise!",
-    "DESCRIPTIONS": ["When you resurface, apply #b", " Ink to a random enemy."]
+    "DESCRIPTIONS": [
+      "When you resurface, apply #b",
+      " #yInk to a random enemy."
+    ]
+  },
+  "inklingMod:SplatWallPower": {
+    "NAME": "Splat Wall",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked this turn, apply #b",
+      " #yInk to the attacker."
+    ]
   },
   "inklingMod:SplattershotJrPower": {
     "NAME": "Weapon: Splattershot Jr.",
