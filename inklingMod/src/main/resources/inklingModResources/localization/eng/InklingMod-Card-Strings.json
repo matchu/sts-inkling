@@ -96,12 +96,13 @@
   },
   "inklingMod:Booyah": {
     "NAME": "Booyah!",
-    "DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! cards."
+    "DESCRIPTION": "Add a *Booyah! to your discard pile. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Add a *Booyah! to your discard pile. NL Draw !M! cards."
   },
   "inklingMod:BooyahBomb": {
     "NAME": "Booyah Bomb",
-    "DESCRIPTION": "Retain. NL Deal !D! damage to all enemies !M! times. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage to all enemies !M! times. Add a *Booyah! to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to all enemies !M! times. Add a *Booyah!+ to your hand. NL Exhaust."
   },
   "inklingMod:NinjaSquid": {
     "NAME": "Ninja Squid",

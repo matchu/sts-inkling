@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.interfaces.CloneablePowerInterface;
 import inklingMod.InklingMod;
+import inklingMod.actions.BooyahExhaustAllAction;
 import inklingMod.cards.BooyahBomb;
 import inklingMod.util.TextureLoader;
 
@@ -46,8 +47,22 @@ public class BooyahPower extends AbstractPower implements CloneablePowerInterfac
     // Adapted from MantraPower.java in the base game
     super.stackPower(stackAmount);
     if (this.amount >= 16) {
+      // Trash this power. (I add this to top because most power things do so?)
       addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+
+      // TODO: Somehow keep track of whether a Booyah!+ was involved, and
+      // grant a Booyah Bomb+ if so?
+      // (And I add this to top because I want to guarantee it makes it into
+      // the hand, and isn't blocked by your Booyah card draw effect.)
       addToTop(new MakeTempCardInHandAction(new BooyahBomb()));
+
+      // Exhaust all Booyahs in your hand and deck and discard.
+      // (We do this immediately, to clear extra Booyahs out of your hand to
+      // make room for your card draw after getting Booyah Bomb if possible;
+      // and we also do it again after, to trash the Booyah you just played
+      // and just generated.)
+      addToTop(new BooyahExhaustAllAction());
+      addToBot(new BooyahExhaustAllAction());
     }
   }
 

@@ -4,6 +4,8 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,6 +41,7 @@ public class BooyahBomb extends CustomCard {
     this.baseDamage = DAMAGE;
     this.baseMagicNumber = NUM_ATTACKS;
     this.magicNumber = this.baseMagicNumber;
+    this.cardsToPreview = new Booyah();
   }
 
   @Override
@@ -48,6 +51,12 @@ public class BooyahBomb extends CustomCard {
           : AbstractGameAction.AttackEffect.SLASH_VERTICAL;
       addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, effect));
     }
+
+    AbstractCard generatedCard = new Booyah();
+    if (this.upgraded) {
+      generatedCard.upgrade();
+    }
+    addToBot(new MakeTempCardInHandAction(generatedCard));
   }
 
   @Override
@@ -55,6 +64,8 @@ public class BooyahBomb extends CustomCard {
     if (!upgraded) {
       upgradeName();
       upgradeMagicNumber(UPGRADE_PLUS_NUM_ATTACKS);
+      this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+      this.cardsToPreview.upgrade();
       initializeDescription();
     }
   }
