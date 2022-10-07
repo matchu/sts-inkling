@@ -2,6 +2,7 @@ package inklingMod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.interfaces.CloneablePowerInterface;
 import inklingMod.InklingMod;
+import inklingMod.cards.BooyahBomb;
 import inklingMod.util.TextureLoader;
 
 public class BooyahPower extends AbstractPower implements CloneablePowerInterface {
@@ -45,6 +47,7 @@ public class BooyahPower extends AbstractPower implements CloneablePowerInterfac
     super.stackPower(stackAmount);
     if (this.amount >= 16) {
       addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+      addToTop(new MakeTempCardInHandAction(new BooyahBomb()));
     }
   }
 

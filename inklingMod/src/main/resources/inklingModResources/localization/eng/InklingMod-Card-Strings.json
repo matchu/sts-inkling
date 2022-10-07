@@ -99,6 +99,10 @@
     "DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "Shuffle a *Booyah! into your discard pile. NL Draw !M! cards."
   },
+  "inklingMod:BooyahBomb": {
+    "NAME": "Booyah Bomb",
+    "DESCRIPTION": "Retain. NL Deal !D! damage to all enemies !M! times. NL Exhaust."
+  },
   "inklingMod:NinjaSquid": {
     "NAME": "Ninja Squid",
     "DESCRIPTION": "Ethereal. While inklingmod:swimming, reduce all damage taken from attacks to 1.",
