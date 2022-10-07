@@ -1,5 +1,6 @@
 package inklingMod.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
 import inklingMod.characters.TheInkling;
+import inklingMod.powers.BooyahPower;
 
 public class Booyah extends CustomCard {
   public static final String ID = InklingMod.makeID(Booyah.class.getSimpleName());
@@ -35,6 +37,7 @@ public class Booyah extends CustomCard {
 
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
+    addToBot(new ApplyPowerAction(p, p, new BooyahPower(p, 1), 1));
     addToBot(new MakeTempCardInDiscardAction(new Booyah(), 1));
     addToBot(new DrawCardAction(this.magicNumber));
   }

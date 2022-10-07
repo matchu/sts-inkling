@@ -79,5 +79,9 @@
     "DESCRIPTIONS": [
       "While inklingmod:swimming, reduce all damage taken from attacks to 1."
     ]
+  },
+  "inklingMod:BooyahPower": {
+    "NAME": "Booyah!",
+    "DESCRIPTIONS": ["You have Booyah'd #b", " times. Woomy!"]
   }
 }
