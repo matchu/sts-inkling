@@ -19,7 +19,7 @@ public class SplatWall extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
   public static final String IMG = InklingMod.makeCardPath("SplatWall.png");
-  private static final CardRarity RARITY = CardRarity.COMMON;
+  private static final CardRarity RARITY = CardRarity.UNCOMMON;
   private static final CardTarget TARGET = CardTarget.SELF;
   private static final CardType TYPE = CardType.SKILL;
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;

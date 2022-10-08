@@ -19,7 +19,7 @@ public class Retreat extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
   public static final String IMG = InklingMod.makeCardPath("Retreat.png");
-  private static final CardRarity RARITY = CardRarity.UNCOMMON;
+  private static final CardRarity RARITY = CardRarity.COMMON;
   private static final CardTarget TARGET = CardTarget.SELF;
   private static final CardType TYPE = CardType.SKILL;
   public static final CardColor COLOR = TheInkling.Enums.COLOR_GRAY;
