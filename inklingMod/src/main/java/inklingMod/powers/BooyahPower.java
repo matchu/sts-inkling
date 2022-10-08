@@ -46,7 +46,7 @@ public class BooyahPower extends AbstractPower implements CloneablePowerInterfac
   public void stackPower(int stackAmount) {
     // Adapted from MantraPower.java in the base game
     super.stackPower(stackAmount);
-    if (this.amount >= 16) {
+    if (this.amount >= 12) {
       // Trash this power. (I add this to top because most power things do so?)
       addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
 
