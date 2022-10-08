@@ -27,8 +27,8 @@ public class SplatWall extends CustomCard {
   private static final int COST = 2;
   private static final int BLOCK = 12;
   private static final int UPGRADE_PLUS_BLOCK = 4;
-  private static final int INK = 3;
-  private static final int UPGRADE_PLUS_INK = 1;
+  private static final int INK = 4;
+  private static final int UPGRADE_PLUS_INK = 2;
 
   public SplatWall() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

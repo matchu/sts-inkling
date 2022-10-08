@@ -63,14 +63,8 @@ public class SplatWallPower extends AbstractPower implements CloneablePowerInter
     // Adapted from FlameBarrierPower.java in the base game
     if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS
         && info.owner != this.owner) {
-      // HACK: Because ink is halved at the end of the enemy's turn, we need to
-      // double the amount we apply in order to have it have the effect we'd
-      // actually expect. Maybe it would be better for ink to be halved at the
-      // start of the enemy turn instead? Or for this to apply in a different way?
-      int actualAmountToApply = this.amount * 2;
       flash();
-      addToTop(new ApplyPowerAction(info.owner, this.owner, new InkPower(info.owner, actualAmountToApply),
-          actualAmountToApply));
+      addToTop(new ApplyPowerAction(info.owner, this.owner, new InkPower(info.owner, this.amount), this.amount));
     }
     return damageAmount;
   }
