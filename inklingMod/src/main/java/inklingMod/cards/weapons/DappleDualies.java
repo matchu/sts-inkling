@@ -9,10 +9,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomCard;
 import inklingMod.InklingMod;
+import inklingMod.cards.weapons.shots.DappleRoll;
 import inklingMod.cards.weapons.shots.DappleShot;
 import inklingMod.characters.TheInkling;
 import inklingMod.powers.weapons.DappleDualiesPlusPower;
 import inklingMod.powers.weapons.DappleDualiesPower;
+import inklingMod.util.CardListPreviewer;
 
 public class DappleDualies extends CustomCard {
   public static final String ID = InklingMod.makeID(DappleDualies.class.getSimpleName());
@@ -28,10 +30,12 @@ public class DappleDualies extends CustomCard {
 
   private static final int COST = 1;
 
+  private final CardListPreviewer cardListPreviewer = new CardListPreviewer();
+
   public DappleDualies() {
     super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-    this.cardsToPreview = new DappleShot();
-    // TODO: Use Downfall's "Tinkerer's Toolbox" code to rotate thru previews.
+    this.cardListPreviewer.addCard(new DappleShot());
+    this.cardListPreviewer.addCard(new DappleRoll());
   }
 
   @Override
@@ -45,8 +49,17 @@ public class DappleDualies extends CustomCard {
     if (!upgraded) {
       upgradeName();
       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-      this.cardsToPreview.upgrade();
+      this.cardListPreviewer.upgradeAll();
       initializeDescription();
+    }
+  }
+
+  @Override
+  public void update() {
+    super.update();
+    if (this.hb.hovered) {
+      this.cardListPreviewer.update();
+      this.cardsToPreview = this.cardListPreviewer.getCard();
     }
   }
 }
